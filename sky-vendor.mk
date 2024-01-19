@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/sky
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/sky/proprietary/odm/etc/camera/camerabooster.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerabooster.json \
     vendor/xiaomi/sky/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/xiaomi/sky/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/xiaomi/sky/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
@@ -13,6 +14,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/xiaomi/sky/proprietary/system_ext/bin/tcmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/tcmd \
     vendor/xiaomi/sky/proprietary/system_ext/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice \
+    vendor/xiaomi/sky/proprietary/system_ext/etc/camerabooster.json:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/camerabooster.json \
     vendor/xiaomi/sky/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/xiaomi/sky/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/xiaomi/sky/proprietary/system_ext/etc/init/tcmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/tcmd.rc \
@@ -252,11 +254,17 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/etc/backend_conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/backend_conf.xml \
     vendor/xiaomi/sky/proprietary/vendor/etc/batching.conf:$(TARGET_COPY_OUT_VENDOR)/etc/batching.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
+    vendor/xiaomi/sky/proprietary/vendor/etc/camera/aivsModel_16E8F8F9:$(TARGET_COPY_OUT_VENDOR)/etc/camera/aivsModel_16E8F8F9 \
+    vendor/xiaomi/sky/proprietary/vendor/etc/camera/aivsModel_56058501:$(TARGET_COPY_OUT_VENDOR)/etc/camera/aivsModel_56058501 \
+    vendor/xiaomi/sky/proprietary/vendor/etc/camera/aivsModel_56058501.tempcache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/aivsModel_56058501.tempcache \
+    vendor/xiaomi/sky/proprietary/vendor/etc/camera/aivsModel_E12C2D6E:$(TARGET_COPY_OUT_VENDOR)/etc/camera/aivsModel_E12C2D6E \
+    vendor/xiaomi/sky/proprietary/vendor/etc/camera/aivsModel_FF7AE9B5:$(TARGET_COPY_OUT_VENDOR)/etc/camera/aivsModel_FF7AE9B5 \
     vendor/xiaomi/sky/proprietary/vendor/etc/camera/com.xiaomi.dcal.wd.1.golden.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/com.xiaomi.dcal.wd.1.golden.bin \
     vendor/xiaomi/sky/proprietary/vendor/etc/camera/com.xiaomi.dcal.wd.2.golden.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/com.xiaomi.dcal.wd.2.golden.bin \
     vendor/xiaomi/sky/proprietary/vendor/etc/camera/com.xiaomi.dcal.wd.3.golden.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/com.xiaomi.dcal.wd.3.golden.bin \
     vendor/xiaomi/sky/proprietary/vendor/etc/camera/com.xiaomi.dcal.wd.4.golden.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/com.xiaomi.dcal.wd.4.golden.bin \
     vendor/xiaomi/sky/proprietary/vendor/etc/camera/dualcam_bokeh_params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dualcam_bokeh_params.json \
+    vendor/xiaomi/sky/proprietary/vendor/etc/camera/dualcam_bokeh_params_m19y.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dualcam_bokeh_params_m19y.json \
     vendor/xiaomi/sky/proprietary/vendor/etc/camera/golden_aac_s5kjn1_wide_ii.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/golden_aac_s5kjn1_wide_ii.bin \
     vendor/xiaomi/sky/proprietary/vendor/etc/camera/golden_ofilm_ov48b2q_wide_i.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/golden_ofilm_ov48b2q_wide_i.bin \
     vendor/xiaomi/sky/proprietary/vendor/etc/camera/golden_sunny_s5kjn1_wide_i.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/golden_sunny_s5kjn1_wide_i.bin \
@@ -1248,6 +1256,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/lib64/android.hardware.usb@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.usb@1.2.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
+    vendor/xiaomi/sky/proprietary/vendor/lib64/camera/com.qti.flash.lm3644.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.flash.lm3644.so \
+    vendor/xiaomi/sky/proprietary/vendor/lib64/camera/com.qti.ois.bu63169gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.ois.bu63169gwz.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/camera/com.qti.sensor.m19_ofilm_ov8856.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.m19_ofilm_ov8856.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/camera/com.qti.sensor.m19_sunny_ov2180.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.m19_sunny_ov2180.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/camera/com.qti.sensor.m19_sunny_ov8856.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.m19_sunny_ov8856.so \
@@ -1501,8 +1511,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libar-gpr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-gpr.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libar-gsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-gsl.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_beautyshot.so \
+    vendor/xiaomi/sky/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_image.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_video.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libarcsoft_hdr_detection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_hdr_detection.so \
+    vendor/xiaomi/sky/proprietary/vendor/lib64/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_high_dynamic_range.so \
+    vendor/xiaomi/sky/proprietary/vendor/lib64/libarcsoft_low_light_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_low_light_hdr.so \
+    vendor/xiaomi/sky/proprietary/vendor/lib64/libarcsoft_portrait_lighting.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_portrait_lighting.so \
+    vendor/xiaomi/sky/proprietary/vendor/lib64/libarcsoft_portrait_lighting_c.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_portrait_lighting_c.so \
+    vendor/xiaomi/sky/proprietary/vendor/lib64/libarcsoft_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_supernight.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libasn1cper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1cper.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libasn1crt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1crt.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libasn1crtx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1crtx.so \
@@ -1520,6 +1536,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera2ndk_vendor.so \
+    vendor/xiaomi/sky/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
+    vendor/xiaomi/sky/proprietary/vendor/lib64/libcamerapostproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamerapostproc.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libcamxcommonutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxcommonutils.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxexternalformatutils.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libcamxfacialfeatures.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfacialfeatures.so \
@@ -1656,11 +1674,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libmialgo_aio_seg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_aio_seg.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libmialgo_sd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_sd.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libmialgo_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_utils.so \
+    vendor/xiaomi/sky/proprietary/vendor/lib64/libmialgoengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgoengine.so \
+    vendor/xiaomi/sky/proprietary/vendor/lib64/libmialgoengine2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgoengine2.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libmifpext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmifpext.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libminksocket_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminksocket_vendor.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libmiphone_capture_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiphone_capture_bokeh.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libmiphone_preview_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiphone_preview_bokeh.so \
+    vendor/xiaomi/sky/proprietary/vendor/lib64/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiracast.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libmlipay.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmlipay.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libmlipay@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmlipay@1.1.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-hdcpmgr.so \
