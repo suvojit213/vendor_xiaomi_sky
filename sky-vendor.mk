@@ -123,7 +123,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/bin/hw/android.hardware.gnss-aidl-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss-aidl-service-qti \
     vendor/xiaomi/sky/proprietary/vendor/bin/hw/android.hardware.keymaster@4.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.1-service-qti \
     vendor/xiaomi/sky/proprietary/vendor/bin/hw/android.hardware.security.keymint-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service-qti \
-    vendor/xiaomi/sky/proprietary/vendor/bin/hw/android.hardware.usb@1.2-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb@1.2-service-qti \
     vendor/xiaomi/sky/proprietary/vendor/bin/hw/qcrilNrd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrilNrd \
     vendor/xiaomi/sky/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/xiaomi/sky/proprietary/vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.nxp.hardware.nfc@2.0-service \
@@ -361,7 +360,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
     vendor/xiaomi/sky/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service-qti.rc \
     vendor/xiaomi/sky/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
-    vendor/xiaomi/sky/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-qti.rc \
     vendor/xiaomi/sky/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/xiaomi/sky/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/xiaomi/sky/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
@@ -676,7 +674,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/etc/thermal-videochat-jp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-videochat-jp.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/thermal-videochat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-videochat.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
-    vendor/xiaomi/sky/proprietary/vendor/etc/usb_compositions.conf:$(TARGET_COPY_OUT_VENDOR)/etc/usb_compositions.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
     vendor/xiaomi/sky/proprietary/vendor/etc/vmmgr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/vmmgr.conf \
     vendor/xiaomi/sky/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
@@ -1253,9 +1250,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/lib64/android.hardware.camera.provider@2.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.6.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/android.hardware.camera.provider@2.7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.7.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.0-impl.so \
-    vendor/xiaomi/sky/proprietary/vendor/lib64/android.hardware.usb@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.usb@1.0.so \
-    vendor/xiaomi/sky/proprietary/vendor/lib64/android.hardware.usb@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.usb@1.1.so \
-    vendor/xiaomi/sky/proprietary/vendor/lib64/android.hardware.usb@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.usb@1.2.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/camera/com.qti.flash.lm3644.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.flash.lm3644.so \
@@ -1876,7 +1870,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrustedapploader.so \
-    vendor/xiaomi/sky/proprietary/vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libvendorscenariopoweroptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendorscenariopoweroptfeature.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libvideooptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideooptfeature.so \
     vendor/xiaomi/sky/proprietary/vendor/lib64/libvideotxr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideotxr.so \
@@ -2157,7 +2150,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-service-qti \
     android.hardware.graphics.mapper-impl-qti-display \
     android.hardware.security.keymint-service-qti-rkp \
-    android.hardware.usb@1.2-service \
     c2_manifest_vendor \
     c2_manifest_vendor_audio \
     dataconnection-saidl \
