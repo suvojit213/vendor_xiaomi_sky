@@ -61,7 +61,7 @@ case "$target" in
         case "$soc_hwid" in
             568|602|581|582)
                 setprop vendor.media.target_variant "_ravelin"
-                if [ $build_codename -le "13" ]; then
+                if [ $build_codename -le "14" ]; then
                     setprop vendor.netflix.bsp_rev "Q4450-37037-1"
                 fi
                 ;;
