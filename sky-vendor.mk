@@ -227,6 +227,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/etc/acdbdata/ravelin_qrd_ato/QRD_ravelin_ato_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ravelin_qrd_ato/QRD_ravelin_ato_workspaceFileXml.qwsp \
     vendor/xiaomi/sky/proprietary/vendor/etc/acdbdata/ravelin_qrd_cust/QRD_ravelin_cust_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ravelin_qrd_cust/QRD_ravelin_cust_acdb_cal.acdb \
     vendor/xiaomi/sky/proprietary/vendor/etc/acdbdata/ravelin_qrd_cust/QRD_ravelin_cust_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ravelin_qrd_cust/QRD_ravelin_cust_workspaceFileXml.qwsp \
+    vendor/xiaomi/sky/proprietary/vendor/etc/acdbdata/ravelin_qrd_cust_eea/QRD_ravelin_eea_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ravelin_qrd_cust_eea/QRD_ravelin_eea_acdb_cal.acdb \
+    vendor/xiaomi/sky/proprietary/vendor/etc/acdbdata/ravelin_qrd_cust_eea/QRD_ravelin_eea_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ravelin_qrd_cust_eea/QRD_ravelin_eea_workspaceFileXml.qwsp \
     vendor/xiaomi/sky/proprietary/vendor/etc/acdbdata/ravelin_qrd_cust_in/QRD_ravelin_in_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ravelin_qrd_cust_in/QRD_ravelin_in_acdb_cal.acdb \
     vendor/xiaomi/sky/proprietary/vendor/etc/acdbdata/ravelin_qrd_cust_in/QRD_ravelin_in_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ravelin_qrd_cust_in/QRD_ravelin_in_workspaceFileXml.qwsp \
     vendor/xiaomi/sky/proprietary/vendor/etc/acdbdata/ravelin_qrd_cust_jp/QRD_ravelin_jp_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ravelin_qrd_cust_jp/QRD_ravelin_jp_acdb_cal.acdb \
